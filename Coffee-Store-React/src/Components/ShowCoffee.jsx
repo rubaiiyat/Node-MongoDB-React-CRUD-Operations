@@ -1,6 +1,7 @@
 import React from "react";
 import { FaEdit, FaEye } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
+import { Link } from "react-router";
 
 const ShowCoffee = ({ coffee, onDelete }) => {
   const { _id, name, taste, category, photo, price } = coffee;
@@ -40,9 +41,12 @@ const ShowCoffee = ({ coffee, onDelete }) => {
           <button className="btn  bg-[#D2B48C] text-white text-lg">
             <FaEye />
           </button>
-          <button className="btn bg-[#3C393B] text-white text-lg">
-            <FaEdit />
-          </button>
+          <Link to={`/updatecoffee/${_id}`}>
+            <button className="btn bg-[#3C393B] text-white text-lg">
+              <FaEdit />
+            </button>
+          </Link>
+
           <button
             onClick={() => onDelete(_id)}
             className="btn  btn-error text-white text-lg"
