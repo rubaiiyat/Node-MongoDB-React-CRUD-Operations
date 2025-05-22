@@ -1,6 +1,7 @@
-##☕ Coffee Shop CRUD Application
+#☕ Coffee Shop CRUD Application
 
 A simple CRUD web application built with ReactJS, Node.js, Express, MongoDB, and Tailwind CSS to manage coffee items. Users can add, view, update, and delete. Images are added via URL input, and SweetAlert is used for user confirmation.
+
 
 
 
@@ -45,6 +46,6 @@ Image Input: Add an image using a valid image URL.
 
 
 🎥 Video URL
-▶️ Watch the full preview here
+▶️https://youtu.be/nPRYR-Ccmek
 
 
