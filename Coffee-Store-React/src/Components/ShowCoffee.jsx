@@ -7,7 +7,7 @@ const ShowCoffee = ({ coffee, onDelete }) => {
   const { _id, name, taste, category, photo, price } = coffee;
 
   return (
-    <div className="card md:flex-row flex-col bg-base-200 shadow-lg">
+    <div className="card md:flex-row flex-col bg-base-200 shadow-lg font-mono">
       {/* Image */}
       <figure className="md:w-1/3 w-full">
         <img
@@ -21,7 +21,7 @@ const ShowCoffee = ({ coffee, onDelete }) => {
       <div className="card-body md:flex-row flex-col justify-between items-start md:items-center w-full gap-4">
         {/* Info */}
         <div className="text-start space-y-2 md:w-9/12 w-full">
-          <h2 className="card-title text-xl font-bold">{name}</h2>
+          <h2 className="card-title text-xl font-bold ">{name}</h2>
           <p>
             <span className="font-semibold">Taste: </span>
             <span className="text-gray-300">{taste}</span>

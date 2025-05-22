@@ -32,7 +32,6 @@ const UpdateCoffee = () => {
       photo,
       price,
     };
-    console.log("working");
 
     fetch(`http://localhost:3000/coffee/${_id}`, {
       method: "PUT",
