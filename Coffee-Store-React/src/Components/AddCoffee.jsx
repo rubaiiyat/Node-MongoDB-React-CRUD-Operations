@@ -4,7 +4,6 @@ import Swal from "sweetalert2";
 const AddCoffee = () => {
   const handleAddCoffee = (event) => {
     event.preventDefault();
-    console.log("Working");
 
     const form = event.target;
     const name = form.name.value;
@@ -46,6 +45,7 @@ const AddCoffee = () => {
             icon: "success",
             draggable: true,
           });
+          form.reset();
         }
       });
   };
