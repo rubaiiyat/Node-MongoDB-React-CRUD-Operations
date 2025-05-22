@@ -2,8 +2,9 @@ import React from "react";
 import { FaEdit, FaEye } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 
-const ShowCoffee = ({ coffee }) => {
+const ShowCoffee = ({ coffee, onDelete }) => {
   const { _id, name, taste, category, photo, price } = coffee;
+
   return (
     <div className="card md:flex-row flex-col bg-base-200 shadow-lg">
       {/* Image */}
@@ -42,7 +43,10 @@ const ShowCoffee = ({ coffee }) => {
           <button className="btn bg-[#3C393B] text-white text-lg">
             <FaEdit />
           </button>
-          <button className="btn  btn-error text-white text-lg">
+          <button
+            onClick={() => onDelete(_id)}
+            className="btn  btn-error text-white text-lg"
+          >
             <MdDelete />
           </button>
         </div>
